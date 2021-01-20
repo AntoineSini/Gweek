@@ -11,7 +11,7 @@
 *.sln.docstates
 
 # our git ignore
-build/
+build/obj
 .vscode
 
 # User-specific files (MonoDevelop/Xamarin Studio)
