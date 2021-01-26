@@ -3,7 +3,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/0-percent-optimized.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
 
-Gwynt game in the geek universe lol
+Gwynt game in the geek universe
 
 ## To start up
 
