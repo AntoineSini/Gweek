@@ -16,7 +16,7 @@ int main(int argc, char *argv[]){
     GweekEngine.Init();
 
     while(GweekEngine.isAlive()){
-
+        
         GweekEngine.Update();
         GweekEngine.Draw();
 

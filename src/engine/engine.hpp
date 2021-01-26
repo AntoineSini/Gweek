@@ -10,6 +10,7 @@ class Engine{
 
         SDL_Window *m_context;
         SDL_Renderer *m_renderer;
+        SDL_Event m_event;
 
         bool m_alive;
 
@@ -35,6 +36,7 @@ class Engine{
         void setWinTitle(std::string title){ this->m_winTitle = title; }
         SDL_Window *getContext(){ return this->m_context; }
         SDL_Renderer *getRenderer(){ return this->m_renderer; }
+        SDL_Event getEvent(){ return this->m_event; }
 };
 
 #endif

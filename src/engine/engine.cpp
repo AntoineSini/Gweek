@@ -30,7 +30,15 @@ void Engine::Init(){
 }
 
 void Engine::Update(){
-    //TODO
+    SDL_Event e = getEvent();
+
+    while(SDL_PollEvent(&e) > 0){
+        switch(e.type){
+            case SDL_QUIT:
+                this->m_alive = false;
+                break;
+        }
+    }
 }
 
 void Engine::Draw(){
