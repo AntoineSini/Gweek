@@ -1,6 +1,6 @@
 C		:= -g++
 CFLAGS	:= -pedantic-errors -Wall -Wextra
-LDFLAGS	:= -L./lib/ -lmingw32 -lSDL2main -lSDL2
+LDFLAGS	:= -L./lib/ -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
 INCLUDE	:= -isysteminclude/ -Iinclude/
 
 # SOURCE FOLDERS

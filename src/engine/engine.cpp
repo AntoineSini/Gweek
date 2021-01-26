@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 
 #include "engine.hpp"
 
@@ -44,16 +45,17 @@ void Engine::Update(){
 void Engine::Draw(){
     SDL_RenderClear(getRenderer());
 
+    SDL_Texture *img = NULL;
+    int w,h;
+    img = IMG_LoadTexture(getRenderer(), "data/sprites/issou.png");
+
+    SDL_QueryTexture(img, NULL, NULL, &w, &h);
     SDL_Rect rect;
-    rect.x = 250;
-    rect.y = 150;
-    rect.w = 200;
-    rect.h = 200;
-
-    SDL_SetRenderDrawColor(getRenderer(), 255, 255, 255, 255);
-    SDL_RenderDrawRect(getRenderer(), &rect);
-
-    SDL_SetRenderDrawColor(getRenderer(), 0, 0, 0, 255);
+    rect.x = 0;
+    rect.y = 0;
+    rect.w = w;
+    rect.h = h;
+    SDL_RenderCopy(getRenderer(), img, NULL, &rect);
 
     SDL_RenderPresent(getRenderer());
 }
